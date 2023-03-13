@@ -8,16 +8,7 @@ class Program
 {
   static void Main(string[] args)
   {
-    int[] a = new int[10];
-    int[] b = new int[a.Length];
 
-    for (int i = 0; i < a.Length; i++)
-    {
-      Console.Write($"Insira o valor na posicao {i}:");
-      a[i] = int.Parse(Console.ReadLine());
-
-      b[i] = a[i] * i;
-    }
 
   }
 }
