@@ -7,12 +7,12 @@ class Program
 {
   static void Main(string[] args)
   {
-    int[] a = new int[3];
+    int[] a = new int[8];
     int[] b = new int[a.Length];
 
     for (int i = 0; i < a.Length; i++)
     {
-      Console.Write($"Insira o {i + 1} valor:");
+      Console.Write($"Insira o valor na posicao {i}:");
       a[i] = int.Parse(Console.ReadLine());
 
       b[i] = a[i] * 2;

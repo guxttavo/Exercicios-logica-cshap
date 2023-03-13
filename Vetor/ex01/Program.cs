@@ -12,7 +12,7 @@ class Program
 
     for (int i = 0; i < a.Length; i++)
     {
-      Console.Write($"Insira o {i + 1} valor:");
+      Console.Write($"Insira o valor na posicao {i}:");
       a[i] = int.Parse(Console.ReadLine());
     }
 
