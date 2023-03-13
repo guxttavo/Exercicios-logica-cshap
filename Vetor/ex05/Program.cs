@@ -15,8 +15,8 @@ class Program
     {
       Console.Write($"Insira o valor na posicao {i}:");
       a[i] = int.Parse(Console.ReadLine());
-
       b[i] = a[i] * i;
+
     }
 
   }
