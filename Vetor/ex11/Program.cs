@@ -7,7 +7,7 @@ class Program
 {
   static void Main(string[] args)
   {
-    int[] a = new int[2];
+    int[] a = new int[10];
 
     for (int i = 0; i < a.Length; i++)
     {
