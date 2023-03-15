@@ -5,7 +5,6 @@
    -A soma dos elementos armazenados neste vator que são inferiores a 15.
    -A média dos elementos armazendos no vetor que são superiores a 15.
  */
-
 class Program
 {
   static void Main(string[] args)
@@ -15,39 +14,35 @@ class Program
 
     for (int i = 0; i < a.Length; i++)
     {
-      a[i] = rdn.Next(50);
+      a[i] = rdn.Next(30);
     }
 
-    int qtdQuinze = 0;
+    int igualQuinze = 0;
+    int somaMenorQuinze = 0;
+    int somaMaiorQuinze = 0;
+    int qtnMaiorQuinze = 0;
+
     for (int i = 0; i < a.Length; i++)
     {
       if (a[i] == 15)
       {
-        qtdQuinze++;
+        igualQuinze++;
       }
-    }
-
-    int soma = 0;
-    for (int i = 0; i < a.Length; i++)
-    {
-      if (a[i] < 15)
+      else if (a[i] < 15)
       {
-        soma += a[i];
+        somaMenorQuinze += a[i];
       }
-    }
-
-    int somaMaioresQuinze = 0;
-    for (int i = 0; i < a.Length; i++)
-    {
-      if (a[i] < 15)
+      else if (a[i] > 15)
       {
-
+        qtnMaiorQuinze++;
+        somaMaiorQuinze += qtnMaiorQuinze;
       }
     }
 
-    Console.WriteLine("Vetor A: " + string.Join(",", a));
-    Console.WriteLine("Quantidade de quinzes : " + qtdQuinze);
-    Console.WriteLine("Soma : " + soma);
-
+    System.Console.WriteLine("Vetor a: " + string.Join(",", a));
+    System.Console.WriteLine("Igual quinze: " + igualQuinze);
+    System.Console.WriteLine("Soma menor que quinze: " + somaMenorQuinze);
+    System.Console.WriteLine("Soma maior que quinze: " + somaMaiorQuinze);
+    System.Console.WriteLine("Quantidade maior que quinze: " + qtnMaiorQuinze);
   }
 }
