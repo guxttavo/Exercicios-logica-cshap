@@ -4,7 +4,6 @@
    respectivos elementos em A e B, ou seja,
    C[i]= A[i] + B[i]
 */
-using System;
 class Program
 {
   static void Main(string[] args)
